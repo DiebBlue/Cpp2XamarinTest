@@ -15,6 +15,7 @@
 *.so
 *.dylib
 *.dll
+*.recipe
 
 # Fortran module files
 *.mod
@@ -30,3 +31,14 @@
 *.exe
 *.out
 *.app
+
+# others
+*.log
+*.tlog
+*.FileListAbsolute.txt
+*.lastbuildstate
+**/obj/*
+*.pdb
+**/Debug/*
+**/Release/*
+

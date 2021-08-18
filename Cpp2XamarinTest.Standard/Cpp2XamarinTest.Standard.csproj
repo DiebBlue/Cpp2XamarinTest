@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Cpp2XamarinTest</RootNamespace>
+    <AssemblyName>Cpp2XamarinTest</AssemblyName>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+	<!-- 01.01.2021 -->
+	<!-- <StartDateinDays>737792</StartDateinDays> -->
+	<!-- default StartDateinDays -->
+	<StartDateinDays>730119</StartDateinDays>
+	<CurrentDateInDays>$([System.TimeSpan]::FromTicks($([System.DateTime]::UtcNow.Ticks)).Days)</CurrentDateInDays>
+	<DaysSinceStart>$([MSBuild]::Subtract($(CurrentDateInDays), $(StartDateinDays)))</DaysSinceStart>
+	<Hour>$([System.DateTime]::Now.Hour)</Hour>
+	<Minute>$([System.DateTime]::Now.Minute)</Minute>
+	<Second>$([System.DateTime]::Now.Second)</Second>
+    <SecondsSinceMidnight>$([MSBuild]::Add($(Second),$([MSBuild]::Add($([MSBuild]::Multiply($(Hour),3600)),$([MSBuild]::Multiply($(Minute),60))))))</SecondsSinceMidnight>
+    <!-- <Revision>$([System.Math]::Floor($([MSBuild]::Multiply($(SecondsSinceMidnight),$([System.Double]::Parse("0,75849537037037"))))))</Revision> -->
+	<Revision>$([System.Math]::Floor($([MSBuild]::Multiply($(SecondsSinceMidnight),$([System.Double]::Parse("0,5"))))))</Revision>
+    <AssemblyVersion>0.1.$(DaysSinceStart).$(Revision)</AssemblyVersion>
+	<FileVersion>$(AssemblyVersion)</FileVersion>
+    <Version>$(AssemblyVersion)</Version>
+	<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+	<Deterministic>false</Deterministic>
+	<Authors>Daniel Kapusi</Authors>
+    <Company />
+    <Product>Cpp2XamarinTest</Product>
+    <Description>C++ Wrapper for test purposes</Description>
+    <Copyright>2021</Copyright>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>portable</DebugType>
+	<Optimize>true</Optimize>
+	<WarningLevel>5</WarningLevel>
+    <DocumentationFile>bin\Release\Cpp2XamarinTest.xml</DocumentationFile>
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>portable</DebugType>
+	<Optimize>false</Optimize>
+	<DocumentationFile>bin\Debug\Cpp2XamarinTest.xml</DocumentationFile>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <Import Project="..\Cpp2XamarinTest.Shared\Cpp2XamarinTest.Shared.projitems" Label="Shared" />
+</Project>
