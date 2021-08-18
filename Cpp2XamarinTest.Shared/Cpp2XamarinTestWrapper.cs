@@ -6,10 +6,10 @@ namespace Cpp2XamarinTest
     internal static class Cpp2XamarinTestWrapper
     {
 #if Android
-        const string DllName = "libcpp2xamarin_test.so";
+        const string DllName = "libcpp2xamarintestcpp.so";
 #elif _WINDOWS
         #error unsupported platform
-        const string DllName = "libcpp2xamarin_test.dll";
+        const string DllName = "libcpp2xamarintestcpp.dll";
 #else
         const string DllName = "__Internal";
 #endif
