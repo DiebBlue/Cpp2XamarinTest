@@ -1,4 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'">
+    <PackagePath>C:\src\Projects\Cpp2XamarinTest\Cpp2XamarinTestApp\Cpp2XamarinTestApp.Android\bin\Debug\com.companyname.Cpp2XamarinTestApp-Signed.apk</PackagePath>
+    <DebuggerFlavor>AndroidDebugger</DebuggerFlavor>
+  </PropertyGroup>
 </Project>
