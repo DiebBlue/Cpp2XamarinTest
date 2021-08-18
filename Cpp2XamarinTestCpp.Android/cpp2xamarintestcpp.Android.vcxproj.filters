@@ -4,6 +4,6 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="cpp2xamarin_test_android.cpp" />
+    <ClCompile Include="cpp2xamarintestcppandroid.cpp" />
   </ItemGroup>
 </Project>

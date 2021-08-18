@@ -120,8 +120,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
@@ -145,8 +144,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\staticlibs\$(TargetArchAbi);$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\3rdparty\libs\$(TargetArchAbi);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
@@ -176,8 +174,7 @@
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
     </Link>
     <PostBuildEvent>
@@ -205,8 +202,7 @@
       <AdditionalLibraryDirectories>$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\staticlibs\$(TargetArchAbi);$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\3rdparty\libs\$(TargetArchAbi);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
     </Link>
     <PostBuildEvent>
@@ -227,8 +223,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
@@ -251,8 +246,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\staticlibs\$(TargetArchAbi);$(ProjectDir)$(PlatformName)\bin\$(Configuration)\OpenCV_install\sdk\native\3rdparty\libs\$(TargetArchAbi);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
@@ -275,8 +269,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
@@ -299,8 +292,7 @@
       <CppLanguageStandard>c++11</CppLanguageStandard>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>
-      </AdditionalDependencies>
+      <AdditionalDependencies>-fopenmp</AdditionalDependencies>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath)</SharedLibrarySearchPath>
       <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <LibraryDependencies>$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
