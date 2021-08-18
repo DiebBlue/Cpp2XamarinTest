@@ -41,4 +41,5 @@
 *.pdb
 **/Debug/*
 **/Release/*
+**/.vs/*
 
